@@ -31,7 +31,7 @@ while sitp>0 :
       time.sleep(1)
       stake=int(input("{} how many stick you will take : ".format(name)))
       sitp=sitp-stake
-      winner=name,"win"
+      winner=name
       coin=2
     elif coin==2:
       Btakestick=random.randint(1,2)
@@ -55,7 +55,7 @@ while sitp>0 :
       sitp=sitp+stake
       coin=1
     elif ((stake or Btakestick)==1 or (stake  or Btakestick)==2) and sitp ==0 :
-      print("the winner is :",winner)
+      print("the winner is :",winner,", take the last stick",)
     elif ((stake or Btakestick) ==2) and sitp <0 :
       print("You can not take till stick in the pile <0 please choose stick again!\n")
       time.sleep(1)
